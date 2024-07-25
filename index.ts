@@ -269,9 +269,31 @@
 //  profile("gautam",11)
 
 
-const isPalin=(str:string):boolean=>{
-       let mypali=str.split("").reverse().join("")
-       return mypali===str
-}
+// const isPalin=(str:string):boolean=>{
+//        let mypali=str.split("").reverse().join("")
+//        return mypali===str
+// }
 
-console.log(isPalin("12321"))
+// console.log(isPalin("12321"))
+
+// const isAvg =(a:number[])=>{
+//    const sum= a.reduce((sum,e)=>{
+//              return sum+=e
+//        })
+//        return sum/a.length
+// }
+
+// console.log(isAvg([5,2,3,5,7,8]))
+
+//////////this is for default parameter
+
+function defaultfun(name:string,id=3){
+    console.log(`your name is ${name} and id is ${id}`)
+}
+defaultfun("aaashu",55)
+
+//////////optional paramiter////////
+function optionalfun(name: string, id?: number) {
+    console.log(`your name is ${name} and id is ${id}`)
+}
+optionalfun("aaashu")
