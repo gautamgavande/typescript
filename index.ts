@@ -315,19 +315,41 @@
 // let newarr=arr.push("orange2") //new arr length return karta hai
 // console.log(arr) //[ 'banana', 'kivi', 'mango', 'orange', 'orange2' ]
 
-let arr:string[]=["name","age","time","date"]
+// let arr:string[]=["name","age","time","date"]
 
-////////////for loop
-for(let i=0;i<arr.length;i++){
-    console.log(arr[i])
-}
-///////////for of loop in typescript 
+// ////////////for loop
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i])
+// }
+// ///////////for of loop in typescript 
 
-for(const value of arr){
-    console.log(value)
-}
+// for(const value of arr){
+//     console.log(value)
+// }
 
 
-for(const value in arr){
-    console.log(value)   //index provide karta hai
-}
+// for(const value in arr){
+//     console.log(value)   //index provide karta hai
+// }
+
+
+// let arr:number[]=[1,2,3,4,5,6]
+// let newarr=arr.map((e:number)=>{
+//     return e*5
+// })
+// console.log(newarr)
+
+
+
+// let arr:number[]=[1,2,3,4,5,6]
+// let newarr:string[]=arr.map((e:number)=>{
+//     return e.toString()
+// })
+// console.log(newarr)
+
+
+// let arr:number[]=[1,2,3,4,5,6]
+// let newarr:number[]=arr.filter((e:number)=>{
+//     return e%2===0
+// })
+// console.log(newarr)
