@@ -287,13 +287,47 @@
 
 //////////this is for default parameter
 
-function defaultfun(name:string,id=3){
-    console.log(`your name is ${name} and id is ${id}`)
-}
-defaultfun("aaashu",55)
+// function defaultfun(name:string,id=3){
+//     console.log(`your name is ${name} and id is ${id}`)
+// }
+// defaultfun("aaashu",55)
 
-//////////optional paramiter////////
-function optionalfun(name: string, id?: number) {
-    console.log(`your name is ${name} and id is ${id}`)
+// //////////optional paramiter////////
+// function optionalfun(name: string, id?: number) {
+//     console.log(`your name is ${name} and id is ${id}`)
+// }
+// optionalfun("aaashu")
+
+
+
+//a.using squire brackets
+
+// const number:number[]=[1,2,3,4,5,6]
+
+// //b.using the Array constractor
+// const number1:number[]=new Array(1,2,3,4,5,6)
+
+// //c. using the array.of method:
+// const names:string[]=Array.of("vinod","thapa","youtube")   
+
+// let arr:string[]=["banana","kivi","mango","orange"]
+
+// let newarr=arr.push("orange2") //new arr length return karta hai
+// console.log(arr) //[ 'banana', 'kivi', 'mango', 'orange', 'orange2' ]
+
+let arr:string[]=["name","age","time","date"]
+
+////////////for loop
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i])
 }
-optionalfun("aaashu")
+///////////for of loop in typescript 
+
+for(const value of arr){
+    console.log(value)
+}
+
+
+for(const value in arr){
+    console.log(value)   //index provide karta hai
+}

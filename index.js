@@ -206,13 +206,34 @@
 // }
 // console.log(isAvg([5,2,3,5,7,8]))
 //////////this is for default parameter
-function defaultfun(name, id) {
-    if (id === void 0) { id = 3; }
-    console.log("your name is ".concat(name, " and id is ").concat(id));
-}
-defaultfun("aaashu", 55);
-////////////optional paramiter////////
+// function defaultfun(name:string,id=3){
+//     console.log(`your name is ${name} and id is ${id}`)
+// }
+// defaultfun("aaashu",55)
+// //////////optional paramiter////////
 // function optionalfun(name: string, id?: number) {
 //     console.log(`your name is ${name} and id is ${id}`)
 // }
 // optionalfun("aaashu")
+//a.using squire brackets
+// const number:number[]=[1,2,3,4,5,6]
+// //b.using the Array constractor
+// const number1:number[]=new Array(1,2,3,4,5,6)
+// //c. using the array.of method:
+// const names:string[]=Array.of("vinod","thapa","youtube")   
+// let arr:string[]=["banana","kivi","mango","orange"]
+// let newarr=arr.push("orange2") //new arr length return karta hai
+// console.log(arr) //[ 'banana', 'kivi', 'mango', 'orange', 'orange2' ]
+var arr = ["name", "age", "time", "date"];
+////////////for loop
+for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+///////////for of loop in typescript 
+for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
+    var value = arr_1[_i];
+    console.log(value);
+}
+for (var value in arr) {
+    console.log(value);
+}
