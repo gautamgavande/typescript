@@ -357,7 +357,32 @@
 
 //object in typescript
 
-const person={
+// const person={
+//     name:"Rahul",
+//     age:25,
+//     address:{
+//         city:"delhi",
+//         state:"delhi",
+//         country:"india"
+//         }
+//         }
+    
+//  console.log(person.name)
+//  console.log(person.address.city)
+//  person.address.city="bhopal"
+// //  person.address.city=1233 //error
+//    console.log(person.address.city)  
+
+
+const person:{
+    name:string,
+    age:number,
+    address:{
+        city:string,
+        state:string,
+        country:string
+        }
+}={
     name:"Rahul",
     age:25,
     address:{
