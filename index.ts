@@ -454,64 +454,75 @@
 
 // repited property ke lia alias create karte hai
 
-type Person={   // person repeteation bar bar  same aa raha hai isi lia ak alise(same type) defined kar dete hai
-    name:string,  //type or capital word me type ka name dikhana padta hai
+// type Person={   // person repeteation bar bar  same aa raha hai isi lia ak alise(same type) defined kar dete hai
+//     name:string,  //type or capital word me type ka name dikhana padta hai
+//     age:number,
+//     class?:string,  // ? se optional key ban jati hai agar kisi object me value agar nahi bhi di to bhi chal jayenga
+//     address:{
+//         city:string,
+//         state:string,
+//         country:string
+//     }
+// }
+
+// const person:Person={
+//     name:"Rahul",
+//     age:25,
+//     address:{
+//         city:"delhi",
+//         state:"delhi",
+//         country:"india"
+//         }
+//         }
+    
+//  console.log(person.name)
+//  console.log(person.address.city)
+//  person.address.city="bhopal"
+// //  person.address.city=1233 //error
+//    console.log(person.address.city)  
+
+// const person1:Person={
+//     name:"Rahul1",
+//     age:25,
+//     address:{
+//         city:"delhi",
+//         state:"delhi",
+//         country:"india"
+//         }
+//         }
+    
+//  console.log(person1.name)
+//  console.log(person1.address.city)
+//  person1.address.city="bhopal"
+// //  person.address.city=1233 //error
+//    console.log(person1.address.city) 
+
+
+// const person2:Person={
+//     name:"Rahul2",
+//     age:25,
+//     address:{
+//         city:"delhi",
+//         state:"delhi",
+//         country:"india"
+//         }
+//         }
+    
+//  console.log(person2.name)
+//  console.log(person2.address.city)
+//  person2.address.city="bhopal"
+// //  person.address.city=1233 //error
+//    console.log(person2.address.city) 
+
+// this for functin we are also use type alse 
+
+type Person={
+    name:string,
     age:number,
-    address:{
-        city:string,
-        state:string,
-        country:string
-    }
 }
+const person={name:"rahul",age:25}
 
-const person:Person={
-    name:"Rahul",
-    age:25,
-    address:{
-        city:"delhi",
-        state:"delhi",
-        country:"india"
-        }
-        }
-    
- console.log(person.name)
- console.log(person.address.city)
- person.address.city="bhopal"
-//  person.address.city=1233 //error
-   console.log(person.address.city)  
-
-const person1:Person={
-    name:"Rahul1",
-    age:25,
-    address:{
-        city:"delhi",
-        state:"delhi",
-        country:"india"
-        }
-        }
-    
- console.log(person1.name)
- console.log(person1.address.city)
- person1.address.city="bhopal"
-//  person.address.city=1233 //error
-   console.log(person1.address.city) 
-
-
-const person2:Person={
-    name:"Rahul2",
-    age:25,
-    address:{
-        city:"delhi",
-        state:"delhi",
-        country:"india"
-        }
-        }
-    
- console.log(person2.name)
- console.log(person2.address.city)
- person2.address.city="bhopal"
-//  person.address.city=1233 //error
-   console.log(person2.address.city) 
-
-
-//type alias in type script
+const show=(person:Person)=>{
+      console.log(`my name is ${person.name} and my age is ${person.age}`)
+}
+show(person)
