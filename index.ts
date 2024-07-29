@@ -374,15 +374,97 @@
 //    console.log(person.address.city)  
 
 
-const person:{
-    name:string,
+// const person:{
+//     name:string,
+//     age:number,
+//     address:{
+//         city:string,
+//         state:string,
+//         country:string
+//         }
+// }={
+//     name:"Rahul",
+//     age:25,
+//     address:{
+//         city:"delhi",
+//         state:"delhi",
+//         country:"india"
+//         }
+//         }
+    
+//  console.log(person.name)
+//  console.log(person.address.city)
+//  person.address.city="bhopal"
+// //  person.address.city=1233 //error
+//    console.log(person.address.city)  
+
+//    const person1:{
+//     name:string,
+//     age:number,
+//     address:{
+//         city:string,
+//         state:string,
+//         country:string
+//         }
+// }={
+//     name:"Rahul1",
+//     age:25,
+//     address:{
+//         city:"delhi",
+//         state:"delhi",
+//         country:"india"
+//         }
+//         }
+    
+//  console.log(person1.name)
+//  console.log(person1.address.city)
+//  person1.address.city="bhopal"
+// //  person.address.city=1233 //error
+//    console.log(person1.address.city) 
+
+
+//    const person2:{
+//     name:string,
+//     age:number,
+//     address:{
+//         city:string,
+//         state:string,
+//         country:string
+//         }
+// }={
+//     name:"Rahul2",
+//     age:25,
+//     address:{
+//         city:"delhi",
+//         state:"delhi",
+//         country:"india"
+//         }
+//         }
+    
+//  console.log(person2.name)
+//  console.log(person2.address.city)
+//  person2.address.city="bhopal"
+// //  person.address.city=1233 //error
+//    console.log(person2.address.city) 
+
+
+
+
+//////////////////type alias in type script
+
+// repited property ke lia alias create karte hai
+
+type Person={   // person repeteation bar bar  same aa raha hai isi lia ak alise(same type) defined kar dete hai
+    name:string,  //type or capital word me type ka name dikhana padta hai
     age:number,
     address:{
         city:string,
         state:string,
         country:string
-        }
-}={
+    }
+}
+
+const person:Person={
     name:"Rahul",
     age:25,
     address:{
@@ -397,3 +479,39 @@ const person:{
  person.address.city="bhopal"
 //  person.address.city=1233 //error
    console.log(person.address.city)  
+
+const person1:Person={
+    name:"Rahul1",
+    age:25,
+    address:{
+        city:"delhi",
+        state:"delhi",
+        country:"india"
+        }
+        }
+    
+ console.log(person1.name)
+ console.log(person1.address.city)
+ person1.address.city="bhopal"
+//  person.address.city=1233 //error
+   console.log(person1.address.city) 
+
+
+const person2:Person={
+    name:"Rahul2",
+    age:25,
+    address:{
+        city:"delhi",
+        state:"delhi",
+        country:"india"
+        }
+        }
+    
+ console.log(person2.name)
+ console.log(person2.address.city)
+ person2.address.city="bhopal"
+//  person.address.city=1233 //error
+   console.log(person2.address.city) 
+
+
+//type alias in type script
