@@ -353,3 +353,22 @@
 //     return e%2===0
 // })
 // console.log(newarr)
+
+
+//object in typescript
+
+const person={
+    name:"Rahul",
+    age:25,
+    address:{
+        city:"delhi",
+        state:"delhi",
+        country:"india"
+        }
+        }
+    
+ console.log(person.name)
+ console.log(person.address.city)
+ person.address.city="bhopal"
+//  person.address.city=1233 //error
+   console.log(person.address.city)  

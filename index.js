@@ -246,8 +246,23 @@
 //     return e.toString()
 // })
 // console.log(newarr)
-var arr = [1, 2, 3, 4, 5, 6];
-var newarr = arr.filter(function (e) {
-    return e % 2 === 0;
-});
-console.log(newarr);
+// let arr:number[]=[1,2,3,4,5,6]
+// let newarr:number[]=arr.filter((e:number)=>{
+//     return e%2===0
+// })
+// console.log(newarr)
+//object in typescript
+var person = {
+    name: "Rahul",
+    age: 25,
+    address: {
+        city: "delhi",
+        state: "delhi",
+        country: "india"
+    }
+};
+console.log(person.name);
+console.log(person.address.city);
+person.address.city = "bhopal";
+person.address.city = 1233;
+console.log(person.address.city); //error
