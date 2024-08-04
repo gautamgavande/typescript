@@ -514,15 +514,65 @@
 // //  person.address.city=1233 //error
 //    console.log(person2.address.city) 
 
+
+
 // this for functin we are also use type alse 
 
-type Person={
-    name:string,
-    age:number,
-}
-const person={name:"rahul",age:25}
+// type Person={
+//     name:string,
+//     age:number,
+// }
+// const person={name:"rahul",age:25}
 
-const show=(person:Person)=>{
-      console.log(`my name is ${person.name} and my age is ${person.age}`)
+// const show=(person:Person)=>{
+//       console.log(`my name is ${person.name} and my age is ${person.age}`)
+// }
+// show(person)
+
+
+//enum in typescrript
+// enum role{
+//     user,
+//     admin
+// }
+
+
+
+enum role{
+    user="user",
+    admin="admin"
 }
-show(person)
+
+type logiuser={
+    name?:String,
+    email:String,
+    password:String,
+    role:role
+}
+
+let user1:logiuser={
+    email:"gautam@gamil.com",
+    password:"12344",
+    role:role.admin
+}
+let user2:logiuser={
+    email:"gaumtam@gamil.com",
+    password:"12344",
+    role:role.user
+}
+
+// const isAdmin:(user:logiuser)=>String=(user:logiuser):String=>{
+//     const {email,role}=user;
+//     return role ==="admin"?`${email} is allow to edit the website`:`${email} is not allow to edit the website`
+// }
+// console.log(isAdmin(user1))
+// console.log(isAdmin(user2))
+
+
+const isAdmin:(user:logiuser)=>String=(user:logiuser):String=>{
+    const {email,role}=user;
+    return role ==="admin"?`${email} is allow to edit the website`:`${email} is not allow to edit the website`
+}
+console.log(isAdmin(user1))
+console.log(isAdmin(user2))
+
